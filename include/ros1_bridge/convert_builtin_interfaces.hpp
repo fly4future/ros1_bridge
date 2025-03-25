@@ -20,6 +20,7 @@
 // include ROS 1 builtin messages
 #include "ros/duration.h"
 #include "ros/time.h"
+#include <std_msgs/Time.h>
 
 // include ROS 2 builtin messages
 #include "builtin_interfaces/msg/duration.hpp"
@@ -76,6 +77,17 @@ void
 internal_stream_translate_helper(
   STREAM_T & stream,
   builtin_interfaces::msg::Time & msg);
+
+
+template<>
+void convert_1_to_2(
+  const std_msgs::Time & ros1_msg, 
+  builtin_interfaces::msg::Time & ros2_msg);
+
+template<>
+void convert_2_to_1(
+  const builtin_interfaces::msg::Time & ros2_msg, 
+  std_msgs::Time & ros1_msg);
 
 }  // namespace ros1_bridge
 
