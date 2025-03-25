@@ -2,11 +2,11 @@
 
 This fork of `ros2/ros1_bridge` integrates support for **MRS-specific custom messages and services**, and includes essential patches to ensure full compatibility between ROS 1 (Noetic) and ROS 2 (Jazzy).
 
-## 🛠️ Modifications from Original `ros2/ros1_bridge`
+## Modifications from Original `ros2/ros1_bridge`
 
 This fork currently includes the following modification:
 
-### ✅ Added Conversion for `std_msgs/Time` ↔ `builtin_interfaces/msg/Time`
+### Added Conversion for `std_msgs/Time` ↔ `builtin_interfaces/msg/Time`
 
 The original bridge did not provide specializations for bridging time messages, resulting in linker errors like:
 
