@@ -35,3 +35,49 @@ These functions enable proper bidirectional conversion of ROS 1 and ROS 2 time m
 ---
 
 ## How to build and run the bridge (to be added)
+
+### Step 1: Prerequisites
+
+Have a ubuntu 20 env with ros noetic.
+
+Build ros jazzy from source (official turorial). ADD LINK HERE
+
+### Step 2: Build the ros noetic workspace
+
+```sh
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+# git clone -b bridge_noetic ... WILL ADD THE BRANCH FIRST
+cd ..
+source /opt/ros/noetic/setup.bash
+catkin_make_isolated --install
+```
+
+### Step 3: Build the ros2 humble workspace
+
+```sh
+mkdir -p ~/colcon_ws/src
+cd ~/colcon_ws/src
+# git clone -b bridge_noetic ... WILL ADD BRANCH FIRST
+cd ..
+source ~/ros2_humble/instal/setup.bash
+colcon build
+```
+
+### Step 4: Build ros1_bridge
+
+The build took about 16 minutes on my laptop.
+
+```sh
+mkdir -p ~/bridge_ws/src
+cd bridge_ws/src
+git clone git@github.com:fly4future/ros1_bridge.git
+cd ..
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/install_isolated/setup.bash
+source ~/ros2_humble/instal/setup.bash
+source ~/colcon_ws/install/setup.bash
+colcon build --packages-select ros1_bridge --cmake-force-configure
+```
+
+### Step 5: Run the bridge
