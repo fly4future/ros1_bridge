@@ -82,7 +82,7 @@ Run this command:
 cd ~/mrs_bridge
 mkdir -p colcon_ws/src
 cd colcon_ws/src
-git clone -b bridge-noetic git@github.com:ctu-mrs/mrs_msgs.git
+git clone -b bridge-humble git@github.com:ctu-mrs/mrs_msgs.git
 cd ..
 source ~/ros2_humble/instal/setup.bash
 colcon build
