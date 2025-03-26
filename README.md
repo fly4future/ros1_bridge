@@ -34,15 +34,15 @@ These functions enable proper bidirectional conversion of ROS 1 and ROS 2 time m
 
 ---
 
-## How to build and run the bridge (to be added)
+## How to build and run the bridge
 
 ### Step 1: Prerequisites
 
 This bridge is made to work on Ubuntu 20 for ros noetic and ros2 humble. So first make sure that your local environment runs on Ubuntu 20.
 
-Then, you can install ros noetic by following [the official tutorial]{https://wiki.ros.org/noetic/Installation/Ubuntu}.
+Then, you can install ros noetic by following [the official tutorial](https://wiki.ros.org/noetic/Installation/Ubuntu).
 
-Finally, you will need to install ros2 humble from source following [these instructions]{https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html}. Make sure to select the command for Ubuntu 20.04 LTS in the section **Install development tools and ROS tools**. 
+Finally, you will need to install ros2 humble from source following [these instructions](https://docs.ros.org/en/humble/Installation/Alternatives/Ubuntu-Development-Setup.html). Make sure to select the command for Ubuntu 20.04 LTS in the section **Install development tools and ROS tools**. 
 
 
 Now that you have a functionning Ubuntu 20 environment that supports both ros noetic and ros2 humble, it is time to start actually building the mrs_msgs bridge.
