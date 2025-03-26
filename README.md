@@ -1,6 +1,6 @@
-# Bridge between ROS Noetic and ROS 2 Jazzy with MRS Custom Message Support
+# Bridge between ROS Noetic and ROS 2 Humble with MRS Custom Message Support
 
-This fork of `ros2/ros1_bridge` integrates support for **MRS-specific custom messages and services**, and includes essential patches to ensure full compatibility between ROS 1 (Noetic) and ROS 2 (Jazzy).
+This fork of `ros2/ros1_bridge` integrates support for **MRS-specific custom messages and services**, and includes essential patches to ensure full compatibility between ROS 1 (Noetic) and ROS 2 (Humble).
 
 ## Modifications from Original `ros2/ros1_bridge`
 
