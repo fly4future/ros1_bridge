@@ -84,7 +84,7 @@ mkdir -p colcon_ws/src
 cd colcon_ws/src
 git clone -b bridge-humble git@github.com:ctu-mrs/mrs_msgs.git
 cd ..
-source ~/ros2_humble/instal/setup.bash
+source ~/ros2_humble/install/setup.bash
 colcon build
 ```
 
